@@ -1,147 +1,706 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portofolia - Dimas Farel Sarwoko</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;700&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+<!doctype html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pengenalan Diri - Dimas Farel Sarwoko</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;700&family=Space+Grotesk:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="icon"
+      href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><rect width='32' height='32' rx='6' fill='%2310110e'/><text x='5' y='22' font-family='sans-serif' font-size='14' font-weight='bold' fill='%23ffffff'>DF<tspan fill='%23ccff00'>.</tspan></text></svg>"
+    />
     <script src="https://cdn.jsdelivr.net/npm/iconify-icon@3.0.0/dist/iconify-icon.min.js"></script>
-</head>
-<body>
+  </head>
+  <body>
+    <div class="shadow box-1"></div>
+    <div class="shadow box-2"></div>
+
     <header>
-        <h1>DF<span>.</span></h1>
+      <a href="#beranda" class="logo">DF<span>.</span></a>
+      <nav class="nav-container">
         <ul class="nav-menu">
-            <li><a href="#home">Beranda</a></li>
-            <li><a href="#home">Tentang Saya</a></li>
-            <li><a href="#home">Pendidikan</a></li>
-            <li><a href="#home">Keahlian</a></li>
-            <li><a href="#home">Pengalaman</a></li>
-            <li><a href="#home">Prestasi</a></li>
-            <li><a href="#home">Proyek</a></li>
-            <li><a href="#home">Kontak</a></li>
+          <li><a href="#beranda" class="nav-link active">Beranda</a></li>
+          <li><a href="#tentang" class="nav-link">Tentang Saya</a></li>
+          <li><a href="#biodata" class="nav-link">Biodata</a></li>
+          <li><a href="#pendidikan" class="nav-link">Pendidikan</a></li>
+          <li><a href="#proyek" class="nav-link">Proyek</a></li>
+          <li><a href="#keahlian" class="nav-link">Yang Dipelajari</a></li>
+          <li><a href="#hobi" class="nav-link">Minat & Hobi</a></li>
+          <li><a href="#kontak" class="nav-link">Kontak</a></li>
         </ul>
-        <a class="button-cv" href="#home" >Unduh CV</a>
+        <a href="#kontak" class="button-sapa">
+          <span>Sapa Saya</span>
+          <iconify-icon icon="lucide:message-circle"></iconify-icon>
+        </a>
+      </nav>
     </header>
+
     <main>
-        <section class="beranda">
-            <div class="beranda-content">
-                <h2 class="beranda-title">Halo, Saya <span>Dimas Farel Sarwoko.</span></h2>
-                <p class="beranda-description">Mahasiswa Teknologi Informasi yang memiliki minat dalam <span>Pengembangan Perangkat Lunak,</span>Robotika, dan Internet of Things (IoT).</p>
-                <p class="beranda-description1">Terus Belajar, bereksperimen, dan membangun solusi digital melalui teknologi modern berkinerja tinggi, teruji, dan efisien.</p>
-                <div class="beranda-buttons">
-                    <a href="#" class="beranda-button-project">Lihat Proyek Saya <iconify-icon icon="andrsrxn:arrow-down"></iconify-icon></a>
-                    <a href="#" class="beranda-button-email">Hubungi Saya <iconify-icon icon="carbon:email"></iconify-icon></a>
-                </div>
-                <div class="beranda-social">
-                    <p>JEJARING:</p>
-                    <a href="#"><iconify-icon icon="andrsrxn:code-slash" class="icon"></iconify-icon> GitHub</a>
-                    <a href="#"><iconify-icon icon="basil:bag-outline" class="icon"></iconify-icon> LinkedIn</a>
-                    <a href="#"><iconify-icon icon="andrsrxn:at" class="icon"></iconify-icon> Email</a>
-                </div>
+      <section class="beranda" id="beranda">
+        <div class="beranda-content">
+          <p class="beranda-badge">
+            <iconify-icon icon="lucide:sparkles"></iconify-icon> Selamat Datang di Website Saya
+          </p>
+          <h2 class="beranda-title">
+            Halo, Saya <span>Dimas Farel Sarwoko.</span>
+          </h2>
+          <p class="beranda-role">
+            <iconify-icon icon="lucide:terminal"></iconify-icon>
+            <span id="typedRole">Backend Developer</span>
+            <span class="typing-cursor">_</span>
+          </p>
+          <p class="beranda-description">
+            Mahasiswa Teknologi Informasi asal <span>Jember, Jawa Timur</span> yang fokus dalam pengembangan backend, fullstack web menggunakan JavaScript, TypeScript, React, PHP Laravel, serta memiliki minat pada robotika & IoT.
+          </p>
+          <p class="beranda-description1">
+            Website sederhana ini saya buat sebagai media pengenalan diri, membagikan latar belakang pendidikan, proyek yang pernah saya kerjakan, serta proses belajar saya di dunia teknologi.
+          </p>
+
+          <div class="beranda-buttons">
+            <a href="#proyek" class="beranda-button-primary">
+              Lihat Proyek Saya
+              <iconify-icon icon="andrsrxn:arrow-down"></iconify-icon>
+            </a>
+            <a href="#kontak" class="beranda-button-secondary">
+              Hubungi Saya
+              <iconify-icon icon="carbon:email"></iconify-icon>
+            </a>
+          </div>
+
+          <div class="beranda-social">
+            <span class="social-label">MEDIA SOSIAL:</span>
+            <div class="social-links">
+              <a href="https://github.com" target="_blank" rel="noopener noreferrer" title="GitHub">
+                <iconify-icon icon="lucide:github" class="icon"></iconify-icon>
+                GitHub
+              </a>
+              <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" title="LinkedIn">
+                <iconify-icon icon="lucide:linkedin" class="icon"></iconify-icon>
+                LinkedIn
+              </a>
+              <a href="mailto:dimasfarelsarwoko@gmail.com" title="Email">
+                <iconify-icon icon="lucide:at-sign" class="icon"></iconify-icon>
+                Email
+              </a>
             </div>
-            <div class="beranda-image">
-                <div class="beranda-image-container">
-                    <img src="img/biksu.jpeg" alt="Dimas Farel Sarwoko">
-                </div>
-                <h4>Dimas Farel Sarwoko</h4>
-                <div class="beranda-image-description">
-                    <p>D4 Teknologi Informasi - Polije</p>
-                    <p class="beranda-image-description-location">Jember, ID</p>
-                </div>
+          </div>
+        </div>
+
+        <div class="beranda-image-wrapper">
+          <div class="beranda-image">
+            <div class="beranda-image-container">
+              <img
+                src="img/biksu.jpeg"
+                alt="Dimas Farel Sarwoko"
+                onerror="
+                  this.onerror = null;
+                  this.src =
+                    'https://ui-avatars.com/api/?name=Dimas+Farel&background=141711&color=ccff00&size=512';
+                "
+              />
+              <div class="image-gradient-overlay"></div>
             </div>
-        </section>
-        <section class="tentang-saya">
-            <div class="tentang-saya-content">
-                <h3><span class="strip"></span> Tentang Saya</h3>
-                <h2>Mengenal Saya Lebih Dekat</h2>
+            <div class="beranda-card-info">
+              <h4>Dimas Farel Sarwoko</h4>
+              <div class="beranda-image-description">
+                <p>
+                  <iconify-icon icon="lucide:graduation-cap"></iconify-icon> D4 Teknik Informatika - Polije
+                </p>
+                <p class="beranda-image-description-location">
+                  <iconify-icon icon="lucide:map-pin"></iconify-icon> Jember, ID
+                </p>
+              </div>
             </div>
-            <div class="tentang-saya-details">
-                <div class="tentang-saya-description">
-                    <h4>"Berawal dari Rasa Ingin Tahu, Berkembang Melalui Teknologi"</h4>
-                    <p>Perkenalkan, saya <span>Dimas Farel Sarwoko</span> seorang mahasiswa Program Studi Teknik Informatika di Politeknik Negeri Jember.</p>
-                    <p>Saya merupakan lulusan SMK Negeri 6 Jember dari jurusan <span>Rekayasa Perangkat Lunak (RPL).</span> Ketertarikan saya terhadap dunia teknologi dimulai sejak bangku sekolah, khususnya dalam bidang pemrograman dan pengembangan aplikasi.</p>
-                    <p>Saya memiliki ketertarikan pada pengembangan web, terutama bagian backend, Saya senang mempelajari bagaimana sebuah sistem bekerja, mulai dari pengelolaan database, pembuatan API, hingga membangun aplikasi yang dapat memberikan manfaat bagi penggunanya</p>
-                    <p>Bagi saya, setiap proyek merupakan kesempatan untuk belajar, berkembang, dan meningkatkan kemampuan dalam dunia teknologi</p>
-                </div>
-                <div class="tentang-saya-experience">
-                    <div class="experience-item">
-                        <div>
-                            <h3>4+ Bulan</h3>
-                            <iconify-icon icon="game-icons:backward-time" class="icon"></iconify-icon>
-                        </div>
-                        <h4>Pengalaman Magang Industri</h4>
-                        <p>Magang profesional BackEnd Developer di PT Hummatech</p>
-                    </div>
-                    <div class="experience-item">
-                        <div>
-                            <h3>17</h3>
-                            <iconify-icon icon="bi:terminal" class="icon"></iconify-icon>
-                        </div>
-                        <h4>Proyek Terlaksana</h4>
-                        <p>Rancang bangun aplikasi web, REST API, mikro-layanan, dan basis data</p>
-                    </div>
-                    <div class="experience-item">
-                        <div>
-                            <h3>Juara 1</h3>
-                            <iconify-icon icon="akar-icons:trophy" class="icon"></iconify-icon>
-                        </div>
-                        <h4>Kelas Industri</h4>
-                        <p>penghargaan peringkat pertama dalam kelas industri</p>
-                    </div>
-                </div>
+          </div>
+
+          <div class="hero-code-snippet">
+            <div class="snippet-header">
+              <span class="snip-dot"></span>
+              <span class="snippet-file">profil_dimas.json</span>
             </div>
-        </section>
-        <section class="pendidikan">
-            <div class="tentang-saya-content">
-                <h3><span class="strip"></span> PENDIDIKAN</h3>
-                <h2>Riwayat Pendidikan</h2>
-            </div>
-            <div class="pendidikan-details">
-                <div class="pendidikan-item">
-                    <span class="active hijau"></span>
-                    <div class="pendidikan-item-header">
-                        <div class="pendidikan-item-header-content">
-                            <p>PERGURUAN TINGGI</p>
-                            <h3>Politeknik Negeri Jember</h3>
-                        </div>
-                        <p class="pendidikan-item-header-status"><span></span> Sedang Menempuh Pendidikan</p>
-                    </div>
-                    <div class="pendidikan-item-content1">
-                        <p><span><iconify-icon icon="icon-park-outline:bachelor-cap-one"></iconify-icon> Program Studi:</span> Teknik Informatika</p>
-                        <p><span><iconify-icon icon="mdi:medal"></iconify-icon> Jenjang:</span>D4 (Sarjana Terapan)</p>
-                    </div>
-                    <p class="pendidikan-item-content">FOKUS KEILMUAN & KURIKULUM:</p>
-                    <div class="pendidikan-item-content">
-                        <p>Arsitektur Perangkat Lunak</p>
-                        <p>Manajemen Basis Data Relasional & NoSQL</p>
-                        <p>Rekayasa Sistem Web Modern</p>
-                    </div>
+            <pre><code>{
+    <span class="c-key">"nama"</span>: <span class="c-str">"Dimas Farel Sarwoko"</span>,
+    <span class="c-key">"role"</span>: <span class="c-str">"Backend & Fullstack"</span>,
+    <span class="c-key">"kampus"</span>: <span class="c-str">"Politeknik Negeri Jember"</span>,
+    <span class="c-key">"status"</span>: <span class="c-str">"Mahasiswa Aktif"</span>
+}</code></pre>
+          </div>
+        </div>
+      </section>
+
+      <section class="tentang-saya" id="tentang">
+        <div class="section-title">
+          <h3><span class="strip"></span> TENTANG SAYA</h3>
+          <h2>Cerita Singkat Tentang Perjalanan Saya</h2>
+        </div>
+        <div class="tentang-saya-details">
+          <div class="tentang-saya-description">
+            <h4>
+              "Berawal dari Rasa Ingin Tahu, Terus Tumbuh Melalui Teknologi"
+            </h4>
+            <p>
+              Perkenalkan, nama saya <span>Dimas Farel Sarwoko</span>. Saya adalah seorang mahasiswa yang sedang menempuh pendidikan di Program Studi Teknik Informatika, Politeknik Negeri Jember.
+            </p>
+            <p>
+              Perjalanan saya di dunia teknologi bermula saat bersekolah di <span>SMK Negeri 6 Jember</span> jurusan <span>Rekayasa Perangkat Lunak (RPL)</span>. Sejak saat itu, saya jatuh cinta pada logika pemrograman, baik di sisi backend yang menangani data dan server, maupun di sisi frontend yang menyajikan pengalaman pengguna yang interaktif.
+            </p>
+            <p>
+              Saya memiliki pengalaman nyata dalam proyek industri seperti mengembangkan backend untuk aplikasi kasir <span>WiraPOS</span> pada masa magang, membangun platform course <span>ZonaCoding</span> sebagai fullstack developer, dan saat ini sedang mengerjakan backend untuk <span>Web Absensi Siswa</span>.
+            </p>
+          </div>
+
+          <div class="tentang-saya-experience">
+            <div class="experience-item">
+              <div class="experience-item-top">
+                <h3>Polije</h3>
+                <div class="exp-icon-box">
+                  <iconify-icon icon="lucide:graduation-cap"></iconify-icon>
                 </div>
-                <div class="pendidikan-item">
-                    <span class="active abu"></span>
-                    <div class="pendidikan-item-header">
-                        <div class="pendidikan-item-header-content">
-                            <p>SEKOLAH MENENGAH KEJURUAN</p>
-                            <h3>SMK Negeri 6 Jember</h3>
-                        </div>
-                        <p class="pendidikan-item-header-status"><span></span> Alumni</p>
-                    </div>
-                    <div class="pendidikan-item-content1">
-                        <p><span><iconify-icon icon="icon-park-outline:bachelor-cap-one"></iconify-icon> Jurusan:</span> Rekayasa Perangkat Lunak (RPL)</p>
-                        <p><span><iconify-icon icon="mdi:medal"></iconify-icon> Spesialisasi:</span>Pengembangan Web & Algoritma</p>
-                    </div>
-                    <p class="pendidikan-item-content">FOKUS KEILMUAN & KURIKULUM:</p>
-                    <div class="pendidikan-item-content">
-                        <p>Arsitektur Perangkat Lunak</p>
-                        <p>Manajemen Basis Data Relasional & NoSQL</p>
-                        <p>Rekayasa Sistem Web Modern</p>
-                    </div>
-                </div>
+              </div>
+              <h4>Mahasiswa Aktif</h4>
+              <p>Menempuh jenjang D4 Teknik Informatika di Politeknik Negeri Jember.</p>
             </div>
-        </section>
+
+            <div class="experience-item">
+              <div class="experience-item-top">
+                <h3>SMKN 6</h3>
+                <div class="exp-icon-box">
+                  <iconify-icon icon="lucide:award"></iconify-icon>
+                </div>
+              </div>
+              <h4>Alumni RPL</h4>
+              <p>Mempelajari dasar algoritma dan pemrograman web di SMK Negeri 6 Jember.</p>
+            </div>
+
+            <div class="experience-item highlight-card">
+              <div class="experience-item-top">
+                <h3>Industri</h3>
+                <div class="exp-icon-box gold">
+                  <iconify-icon icon="lucide:briefcase"></iconify-icon>
+                </div>
+              </div>
+              <h4>Pengalaman Magang</h4>
+              <p>Berpengalaman mengerjakan backend industri (WiraPOS di PT Hummatech).</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="biodata" id="biodata">
+        <div class="section-title">
+          <h3><span class="strip"></span> BIODATA</h3>
+          <h2>Data Diri & Profil Pribadi</h2>
+        </div>
+        <div class="biodata-grid">
+          <div class="biodata-card">
+            <div class="biodata-icon">
+              <iconify-icon icon="lucide:user"></iconify-icon>
+            </div>
+            <div class="biodata-info">
+              <span class="biodata-label">NAMA LENGKAP</span>
+              <p class="biodata-value">Dimas Farel Sarwoko</p>
+            </div>
+          </div>
+
+          <div class="biodata-card">
+            <div class="biodata-icon">
+              <iconify-icon icon="lucide:smile"></iconify-icon>
+            </div>
+            <div class="biodata-info">
+              <span class="biodata-label">NAMA PANGGILAN</span>
+              <p class="biodata-value">Dimas / Farel</p>
+            </div>
+          </div>
+
+          <div class="biodata-card">
+            <div class="biodata-icon">
+              <iconify-icon icon="lucide:map-pin"></iconify-icon>
+            </div>
+            <div class="biodata-info">
+              <span class="biodata-label">KOTA ASAL</span>
+              <p class="biodata-value">Jember, Jawa Timur</p>
+            </div>
+          </div>
+
+          <div class="biodata-card">
+            <div class="biodata-icon">
+              <iconify-icon icon="lucide:book-open"></iconify-icon>
+            </div>
+            <div class="biodata-info">
+              <span class="biodata-label">STATUS</span>
+              <p class="biodata-value">Mahasiswa D4 TI Polije</p>
+            </div>
+          </div>
+
+          <div class="biodata-card">
+            <div class="biodata-icon">
+              <iconify-icon icon="lucide:code-2"></iconify-icon>
+            </div>
+            <div class="biodata-info">
+              <span class="biodata-label">FOKUS UTAMA</span>
+              <p class="biodata-value">Backend & Fullstack Web</p>
+            </div>
+          </div>
+
+          <div class="biodata-card">
+            <div class="biodata-icon">
+              <iconify-icon icon="lucide:quote"></iconify-icon>
+            </div>
+            <div class="biodata-info">
+              <span class="biodata-label">MOTTO HIDUP</span>
+              <p class="biodata-value">"Belajar hal baru setiap hari"</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="pendidikan" id="pendidikan">
+        <div class="section-title">
+          <h3><span class="strip"></span> PENDIDIKAN</h3>
+          <h2>Riwayat Pendidikan Formal</h2>
+        </div>
+        <div class="pendidikan-details">
+          <div class="pendidikan-item">
+            <span class="timeline-dot hijau"></span>
+            <div class="pendidikan-item-header">
+              <div class="pendidikan-item-header-content">
+                <p>PERGURUAN TINGGI</p>
+                <h3>Politeknik Negeri Jember</h3>
+              </div>
+              <p class="pendidikan-status-badge">
+                <span class="badge-dot"></span> Sedang Menempuh Pendidikan
+              </p>
+            </div>
+            <div class="pendidikan-meta">
+              <p>
+                <span><iconify-icon icon="icon-park-outline:bachelor-cap-one"></iconify-icon> Program Studi:</span>
+                Teknik Informatika
+              </p>
+              <p>
+                <span><iconify-icon icon="mdi:medal"></iconify-icon> Jenjang:</span>
+                D4 (Sarjana Terapan)
+              </p>
+            </div>
+            <p class="pendidikan-label">MATERI & FOKUS PEMBELAJARAN:</p>
+            <div class="pendidikan-tags">
+              <span>Arsitektur Perangkat Lunak</span>
+              <span>Basis Data Relasional & NoSQL</span>
+              <span>Pemrograman Web Lanjut</span>
+              <span>Jaringan Komputer</span>
+            </div>
+          </div>
+
+          <div class="pendidikan-item">
+            <span class="timeline-dot abu"></span>
+            <div class="pendidikan-item-header">
+              <div class="pendidikan-item-header-content">
+                <p>SEKOLAH MENENGAH KEJURUAN</p>
+                <h3>SMK Negeri 6 Jember</h3>
+              </div>
+              <p class="pendidikan-status-badge badge-alumni">
+                <span class="badge-dot dot-gray"></span> Alumni
+              </p>
+            </div>
+            <div class="pendidikan-meta">
+              <p>
+                <span><iconify-icon icon="icon-park-outline:bachelor-cap-one"></iconify-icon> Jurusan:</span>
+                Rekayasa Perangkat Lunak (RPL)
+              </p>
+              <p>
+                <span><iconify-icon icon="mdi:medal"></iconify-icon> Keahlian:</span>
+                Dasar Pemrograman Web & Logika Algoritma
+              </p>
+            </div>
+            <p class="pendidikan-label">MATERI & FOKUS PEMBELAJARAN:</p>
+            <div class="pendidikan-tags">
+              <span>Dasar Pemrograman Web (HTML, CSS, PHP, JS)</span>
+              <span>Desain Basis Data MySQL</span>
+              <span>Pemrograman Berorientasi Objek (OOP)</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="proyek" id="proyek">
+        <div class="section-title">
+          <h3><span class="strip"></span> PENGALAMAN PROYEK</h3>
+          <h2>Proyek yang Pernah Saya Kerjakan</h2>
+        </div>
+        <div class="proyek-grid">
+          <div class="proyek-card">
+            <div class="proyek-image-box">
+              <img src="img/wirapos.jpg" alt="WiraPOS.id" />
+              <span class="proyek-badge">Magang • Backend</span>
+            </div>
+            <div class="proyek-body">
+              <div class="proyek-meta-role">
+                <iconify-icon icon="lucide:server"></iconify-icon>
+                <span>Peran: Backend Developer (BE)</span>
+              </div>
+              <h3 class="proyek-title">WiraPOS.id</h3>
+              <p class="proyek-desc">
+                Aplikasi kasir cerdas (Point of Sale) untuk wirausahawan yang dikerjakan pada masa magang industri di PT Hummatech. Bertanggung jawab di sisi backend untuk mengelola transaksi penjualan, data barang, inventaris, dan komunikasi API ke sistem kasir.
+              </p>
+              <div class="proyek-tech">
+                <span>Backend</span>
+                <span>PHP</span>
+                <span>Laravel</span>
+                <span>MySQL</span>
+                <span>REST API</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="proyek-card">
+            <div class="proyek-image-box">
+              <img src="img/zonacoding.jpg" alt="ZonaCoding" />
+              <span class="proyek-badge fullstack">Web Course • Fullstack</span>
+            </div>
+            <div class="proyek-body">
+              <div class="proyek-meta-role">
+                <iconify-icon icon="lucide:layers"></iconify-icon>
+                <span>Peran: Fullstack Developer</span>
+              </div>
+              <h3 class="proyek-title">ZonaCoding</h3>
+              <p class="proyek-desc">
+                Platform website pembelajaran coding online (Academy for Learn) untuk membantu pengguna belajar pemrograman dengan mudah. Bertugas sebagai fullstack developer dalam membangun antarmuka web, logika halaman, serta integrasi sistem kursus.
+              </p>
+              <div class="proyek-tech">
+                <span>Fullstack</span>
+                <span>React</span>
+                <span>JavaScript</span>
+                <span>HTML / CSS</span>
+                <span>Netlify</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="proyek-card">
+            <div class="proyek-image-box placeholder-box">
+              <div class="proyek-placeholder-icon">
+                <iconify-icon icon="lucide:clipboard-check"></iconify-icon>
+              </div>
+              <span class="proyek-badge progress-badge">Tahap Pengerjaan • BE</span>
+            </div>
+            <div class="proyek-body">
+              <div class="proyek-meta-role">
+                <iconify-icon icon="lucide:server"></iconify-icon>
+                <span>Peran: Backend Developer (BE)</span>
+              </div>
+              <h3 class="proyek-title">Web Absensi Siswa</h3>
+              <p class="proyek-desc">
+                Sistem pencatatan dan pengelolaan absensi kehadiran siswa sekolah secara digital. Saat ini masih dalam tahap pengerjaan (ongoing) dan saya fokus bertugas di bagian backend untuk merancang struktur database serta endpoint API data kehadiran.
+              </p>
+              <div class="proyek-tech">
+                <span>Backend (In Progress)</span>
+                <span>Database</span>
+                <span>REST API</span>
+                <span>Sistem Presensi</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="keahlian" id="keahlian">
+        <div class="section-title">
+          <h3><span class="strip"></span> YANG DIPELAJARI</h3>
+          <h2>Teknologi & Keterampilan yang Dipelajari</h2>
+        </div>
+        <div class="keahlian-grid">
+          <div class="keahlian-card">
+            <div class="keahlian-card-header">
+              <div class="keahlian-icon">
+                <iconify-icon icon="lucide:layout"></iconify-icon>
+              </div>
+              <h3>Frontend & UI</h3>
+            </div>
+            <p class="keahlian-desc">Mempelajari pembuatan antarmuka pengguna web interaktif dan terstruktur.</p>
+            <div class="keahlian-list">
+              <div class="skill-item">
+                <iconify-icon icon="logos:javascript"></iconify-icon>
+                <span>JavaScript</span>
+              </div>
+              <div class="skill-item">
+                <iconify-icon icon="logos:typescript-icon"></iconify-icon>
+                <span>TypeScript</span>
+              </div>
+              <div class="skill-item">
+                <iconify-icon icon="logos:react"></iconify-icon>
+                <span>React</span>
+              </div>
+              <div class="skill-item">
+                <iconify-icon icon="logos:html-5"></iconify-icon>
+                <span>HTML5 & CSS3</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="keahlian-card">
+            <div class="keahlian-card-header">
+              <div class="keahlian-icon">
+                <iconify-icon icon="lucide:server"></iconify-icon>
+              </div>
+              <h3>Backend & Logika Server</h3>
+            </div>
+            <p class="keahlian-desc">Mempelajari logika pemrograman server, pembuatan RESTful API, dan arsitektur data.</p>
+            <div class="keahlian-list">
+              <div class="skill-item">
+                <iconify-icon icon="logos:php"></iconify-icon>
+                <span>PHP</span>
+              </div>
+              <div class="skill-item">
+                <iconify-icon icon="logos:laravel"></iconify-icon>
+                <span>Laravel</span>
+              </div>
+              <div class="skill-item">
+                <iconify-icon icon="logos:go"></iconify-icon>
+                <span>Golang (Dasar)</span>
+              </div>
+              <div class="skill-item">
+                <iconify-icon icon="lucide:cable"></iconify-icon>
+                <span>RESTful API</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="keahlian-card">
+            <div class="keahlian-card-header">
+              <div class="keahlian-icon">
+                <iconify-icon icon="lucide:database"></iconify-icon>
+              </div>
+              <h3>Basis Data & Alat Pengembang</h3>
+            </div>
+            <p class="keahlian-desc">Penyimpanan relasi data dan alat bantu kolaborasi pengembangan kode.</p>
+            <div class="keahlian-list">
+              <div class="skill-item">
+                <iconify-icon icon="logos:mysql"></iconify-icon>
+                <span>MySQL</span>
+              </div>
+              <div class="skill-item">
+                <iconify-icon icon="logos:postgresql"></iconify-icon>
+                <span>PostgreSQL</span>
+              </div>
+              <div class="skill-item">
+                <iconify-icon icon="logos:git-icon"></iconify-icon>
+                <span>Git & GitHub</span>
+              </div>
+              <div class="skill-item">
+                <iconify-icon icon="logos:postman-icon"></iconify-icon>
+                <span>Postman</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="hobi" id="hobi">
+        <div class="section-title">
+          <h3><span class="strip"></span> MINAT & HOBI</h3>
+          <h2>Hal-Hal yang Saya Sukai</h2>
+        </div>
+        <div class="hobi-grid">
+          <div class="hobi-card">
+            <div class="hobi-icon">
+              <iconify-icon icon="lucide:code"></iconify-icon>
+            </div>
+            <h3>Ngoding & Eksplorasi Web</h3>
+            <p>
+              Sangat suka mencoba bahasa pemrograman baru, mencari tahu cara kerja API, dan menyusun database agar aplikasi berjalan rapi dan efisien.
+            </p>
+          </div>
+
+          <div class="hobi-card">
+            <div class="hobi-icon">
+              <iconify-icon icon="lucide:cpu"></iconify-icon>
+            </div>
+            <h3>Robotika & IoT</h3>
+            <p>
+              Tertarik menghubungkan mikrokontroler (seperti ESP32/Arduino) dengan jaringan internet untuk membaca sensor dan otomatisasi perangkat.
+            </p>
+          </div>
+
+          <div class="hobi-card">
+            <div class="hobi-icon">
+              <iconify-icon icon="lucide:book-open-check"></iconify-icon>
+            </div>
+            <h3>Membaca Berita Teknologi</h3>
+            <p>
+              Senang membaca perkembangan dunia software engineering, tren AI, serta tools baru yang memudahkan pembuatan aplikasi modern.
+            </p>
+          </div>
+
+          <div class="hobi-card">
+            <div class="hobi-icon">
+              <iconify-icon icon="lucide:headphones"></iconify-icon>
+            </div>
+            <h3>Mendengarkan Musik & Gaming</h3>
+            <p>
+              Mendengarkan lagu dan bermain game santai di waktu luang untuk menyegarkan pikiran setelah berkutat dengan baris kode dan tugas kuliah.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section class="kontak" id="kontak">
+        <div class="section-title">
+          <h3><span class="strip"></span> KONTAK</h3>
+          <h2>Mari Terhubung & Berteman</h2>
+        </div>
+        <div class="kontak-container">
+          <div class="kontak-info">
+            <h3>Senang Berkenalan dengan Anda!</h3>
+            <p class="kontak-text">
+              Punya pertanyaan seputar perkuliahan, ingin berdiskusi seputar proyek web dan pemrograman, atau sekadar menyapa? Jangan ragu untuk menghubungi saya melalui kontak di bawah ini.
+            </p>
+            <div class="kontak-items">
+              <div class="kontak-item">
+                <div class="kontak-icon">
+                  <iconify-icon icon="lucide:mail"></iconify-icon>
+                </div>
+                <div>
+                  <h4>Email Pribadi</h4>
+                  <a href="mailto:dimasfarelsarwoko@gmail.com">dimasfarelsarwoko@gmail.com</a>
+                </div>
+              </div>
+              <div class="kontak-item">
+                <div class="kontak-icon">
+                  <iconify-icon icon="lucide:map-pin"></iconify-icon>
+                </div>
+                <div>
+                  <h4>Alamat / Domisili</h4>
+                  <p>Jember, Jawa Timur, Indonesia</p>
+                </div>
+              </div>
+              <div class="kontak-item">
+                <div class="kontak-icon">
+                  <iconify-icon icon="lucide:graduation-cap"></iconify-icon>
+                </div>
+                <div>
+                  <h4>Institusi Saat Ini</h4>
+                  <p>Politeknik Negeri Jember (D4 TI)</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="kontak-form-wrapper">
+            <form class="kontak-form" id="contactForm">
+              <div class="form-group">
+                <label for="nama">Nama Anda</label>
+                <input type="text" id="nama" placeholder="Tuliskan nama Anda" required />
+              </div>
+              <div class="form-group">
+                <label for="email">Alamat Email</label>
+                <input type="email" id="email" placeholder="nama@email.com" required />
+              </div>
+              <div class="form-group">
+                <label for="subjek">Subjek / Topik</label>
+                <input type="text" id="subjek" placeholder="Contoh: Halo Dimas / Diskusi Proyek" required />
+              </div>
+              <div class="form-group">
+                <label for="pesan">Pesan</label>
+                <textarea id="pesan" rows="4" placeholder="Tuliskan pesan atau sapaan Anda di sini..." required></textarea>
+              </div>
+              <button type="submit" class="button-kirim">
+                <span>Kirim Pesan</span>
+                <iconify-icon icon="lucide:send"></iconify-icon>
+              </button>
+            </form>
+          </div>
+        </div>
+      </section>
     </main>
-</body>
+
+    <footer class="footer">
+      <div class="footer-content">
+        <p>© 2026 <span>Dimas Farel Sarwoko</span> • Web Pengenalan Diri</p>
+        <a href="#beranda" class="back-to-top" title="Kembali ke Atas">
+          <span>Kembali ke atas</span>
+          <iconify-icon icon="lucide:arrow-up"></iconify-icon>
+        </a>
+      </div>
+    </footer>
+
+    <script>
+      const typedRole = document.getElementById("typedRole");
+      if (typedRole) {
+        const roles = [
+          "Backend Developer",
+          "Fullstack Web Developer",
+          "JavaScript, TypeScript & React",
+          "Mahasiswa D4 TI Polije",
+        ];
+
+        let roleIndex = 0;
+        let charIndex = 0;
+        let isDeleting = false;
+        let typingSpeed = 100;
+
+        function typeLoop() {
+          const currentRole = roles[roleIndex];
+
+          if (isDeleting) {
+            typedRole.textContent = currentRole.substring(0, charIndex - 1);
+            charIndex--;
+            typingSpeed = 50;
+          } else {
+            typedRole.textContent = currentRole.substring(0, charIndex + 1);
+            charIndex++;
+            typingSpeed = 100;
+          }
+
+          if (!isDeleting && charIndex === currentRole.length) {
+            isDeleting = true;
+            typingSpeed = 1500;
+          } else if (isDeleting && charIndex === 0) {
+            isDeleting = false;
+            roleIndex = (roleIndex + 1) % roles.length;
+            typingSpeed = 400;
+          }
+
+          setTimeout(typeLoop, typingSpeed);
+        }
+
+        setTimeout(typeLoop, 800);
+      }
+
+      const contactForm = document.getElementById("contactForm");
+      if (contactForm) {
+        contactForm.addEventListener("submit", function (event) {
+          event.preventDefault();
+          alert("Halo! Terima kasih sudah menyapa, pesan Anda telah diterima.");
+          contactForm.reset();
+        });
+      }
+
+      const sections = document.querySelectorAll("section[id]");
+      const navLinks = document.querySelectorAll(".nav-menu li a");
+
+      window.addEventListener("scroll", function () {
+        const scrollPosition = window.pageYOffset;
+
+        sections.forEach(function (section) {
+          const sectionHeight = section.offsetHeight;
+          const sectionTop = section.offsetTop - 140;
+          const sectionId = section.getAttribute("id");
+
+          if (scrollPosition >= sectionTop && scrollPosition < sectionTop + sectionHeight) {
+            navLinks.forEach(function (link) {
+              link.classList.remove("active");
+              if (link.getAttribute("href") === "#" + sectionId) {
+                link.classList.add("active");
+              }
+            });
+          }
+        });
+      });
+    </script>
+  </body>
 </html>
